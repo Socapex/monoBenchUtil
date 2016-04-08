@@ -34,7 +34,6 @@ public class struct_v_class : MonoBehaviour {
 		uiText.text += Bench.Start();
 		for (int i = 0; i < qty; ++i) {
 			structs[i].patate = 42;
-			//structs[i].patate += 42;
 		}
 		uiText.text += Bench.End("Structs");
 	}
@@ -45,7 +44,6 @@ public class struct_v_class : MonoBehaviour {
 		uiText.text += Bench.Start();
 		for (int i = 0; i < qty; ++i) {
 			classes[i].patate = 42;
-			//classes[i].patate += 42;
 		}
 		uiText.text += Bench.End("Classes");
 	}
@@ -54,6 +52,7 @@ public class struct_v_class : MonoBehaviour {
 	{
 		Init();
 	}
+
 	void OnEnable()
 	{
 		DoStruct();
